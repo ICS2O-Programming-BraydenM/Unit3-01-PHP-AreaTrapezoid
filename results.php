@@ -6,6 +6,6 @@ $height = $_POST['height'];
 
 // calculate the area
 $area = ($side_a + $side_b) * $height / 2;
+?>
 
-// display results 
 The area of the trapezoid is <?php echo "$area"; ?> cm<sup>2</sup>.
