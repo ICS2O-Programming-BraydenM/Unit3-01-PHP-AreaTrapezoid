@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<!-- metadata -->
+    <meta charset="utf-8">
+    <meta name="description" content="User Input, with JavaScript">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="Brayden MacMillan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Link to CSS file -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- To use Google's MDL -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.bluegreen.min.css">
+    <title>Trapezoid with JS</title>
+  </head>
+  <body>
+    <center>
+      <?php
+      echo "<h1>Area of a Trapezoid in PHP</h1>";
+       ?>
+    <p>
+      <h3 style="background-color:lightgreen"><font face="Garamond">Enter the dimensions of your trapezoid:</font></h3>
+      <form action="./results.php" method="post" target="results">
+        <label for="Side-a">Side a (cm):</label>
+        <input type="number" step="any" id="side-a" placeholder="Side A"><br><br>
+        <label for="side-b">Side b (cm):</label>
+        <input type="number" step="any" id="side-b" placeholder="Side B"><br><br>
+        <label for="Height">Height (cm):</label>
+        <input type="number" step="any" id="height" placeholder="Height"><br><br>
+        <input type="submit" value="Calculate Area">
+      </form>
+    </p>
+		<!-- Create a space where the user information will be displayed -->
+		<div id="display-results">
+    	<div id="side-a"></div>
+      <div id="side-b"></div>
+			<div id="height"></div>
+		</div>
+
+<!-- Adding an image -->
+      <img src="./images/Beans.PNG" alt="Trapezoid" width="500" length="500">
+      
+<!-- Slider with Starting Value -->
+			<?php
+      echo "<h4>How much do you like math?</h4>";
+       ?>
+			<input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="25" tabindex="0">
+
+    </center>
+  </body>
+</html>
